@@ -279,6 +279,34 @@ main {
     justify-content: space-between;
 }
 
+/**
+    navigation
+**/
+.menu {
+    background-color: white;
+}
+.menu > ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 2px solid gray; 
+    margin: 0 auto;
+    padding: 3px 0px 3px 0;
+}
+#home-icon {
+    flex-basis: 50%; 
+    border-right: 1px solid gray;
+    text-align: left;
+    margin-left: 1%;
+}
+
+.nav-item {
+    width: 20%;
+     border-right: 1px solid gray;
+    text-align: center;
+}
+/**
+    login and signup styles
+**/
 #title {
     font-family: cursive;
     font-size: 24px;
@@ -294,11 +322,24 @@ main {
     height: 65vh;
     padding: 0 15px 10px 15px;
     border-radius: 10px;
+    text-transform: capitalize;
+}
+
+#order-form {
+    background-color: white;
+    font-family: monospace;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-transform: capitalize;
 }
 
 #login-form > h2,
-#signup-form > h2 {
+#signup-form > h2,
+#order-form > h2,
+#signup-button {
     text-align: center;
+    text-transform: uppercase;    
 }
 
 #login-form > input {
@@ -311,11 +352,14 @@ main {
 }
 
 #login-form > label,
-#submit {
-    font-size: 1.3em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
+#submit,
+#signup-button {
+    font-size: 1.1em;
+    margin: 20px 0 20px 0;
+}
+
+#signup-form > label {
+    margin: 10px 0 10px 0;
 }
 
 #submit {
@@ -330,6 +374,7 @@ footer > p {
     text-align: right;
     font-family: inherit;
 }
+
 
 
 
