@@ -271,9 +271,6 @@ body {
     background-color: darksalmon;
 }
 
-header {
-    height: 10vh;
-}
 main {
     display: flex;
     justify-content: space-between;
@@ -375,7 +372,21 @@ footer > p {
     font-family: inherit;
 }
 
+/**
+    landing page styles
+**/
 
+.category-title {
+    border: 1px solid green;
+}
+.food-thumbnail {
+    width: 150px;
+    height: 150px;
+}
 
-
-
+.food-section {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+}
