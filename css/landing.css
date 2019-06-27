@@ -16,3 +16,26 @@
     padding: 2%;
 }
 
+.food-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 350px;
+    background-color: white;
+}
+
+.food-article {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;;
+    margin: 5%;
+    border: 1px solid dimgray;
+}
+
+figure {
+    height: 60%;
+    padding: 0;
+    margin: 5px 0;
+}
+
