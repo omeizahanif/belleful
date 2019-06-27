@@ -39,3 +39,27 @@ figure {
     margin: 5px 0;
 }
 
+.food-title,
+.food-price,
+.add-tray {
+    text-align: center;
+    height: 9%;
+    margin: 5px;
+    font-family: monospace, sans-serif;
+}
+
+.food-title {
+    border-bottom: 1px solid dimgray;
+    font-size: 18px;
+}
+
+.food-price {
+    font-size: 24px;
+    border: 1px solid rgb(10, 150, 100);
+    font-weight: bold;
+}
+
+.add-tray {
+    font-size: 14px;
+    text-transform: uppercase
+}
