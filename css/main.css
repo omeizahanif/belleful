@@ -269,11 +269,17 @@ textarea {
 **/
 body {
     background-color: darksalmon;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
 }
 
-main {
+.signup-container {
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 10vh auto;
 }
 
 /**
@@ -281,6 +287,8 @@ main {
 **/
 .menu {
     background-color: white;
+    width: 90%;
+    margin: 0 auto;
 }
 .menu > ul {
     display: flex;
@@ -305,9 +313,14 @@ main {
     login and signup styles
 **/
 #title {
-    font-family: cursive;
-    font-size: 24px;
-    padding-left: 10px;
+    color: darksalmon;
+    font-family: monospace;
+    font-size: 2em;
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #login-form, #signup-form {
@@ -367,26 +380,18 @@ main {
     font-weight: bold;
 }
 
-footer > p {
-    text-align: right;
-    font-family: inherit;
-}
-
-/**
-    landing page styles
-**/
-
-.category-title {
-    border: 1px solid green;
-}
-.food-thumbnail {
-    width: 150px;
-    height: 150px;
-}
-
-.food-section {
-    width: 80%;
+footer {
     background-color: white;
     display: flex;
-    flex-flow: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    height: 10vh;
+    width: 90%;
+    margin: 1vh auto;
+    text-align: center;
 }
+
+
+
