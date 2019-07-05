@@ -10,12 +10,13 @@
 
 .tray-block {
     border: 1px solid black;
-    background-color: white;
+    
     display: flex;
     justify-content: space-between;
 }
 
 #tray {
+    background-color: white;
     min-width: 50%;
     max-width: 70%;
     border: 1px solid black;
@@ -23,4 +24,5 @@
 
 #tray-subtotal {
     width: 20%;
+    background-color: white;
 }
