@@ -1,19 +1,26 @@
 .tray-container {
-    
+    display: block;
 }
 
 .tray-title {
     
+    margin: 5% auto;
+    background-color: white;
 }
 
 .tray-block {
-    
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 #tray {
-    
+    min-width: 50%;
+    max-width: 70%;
+    border: 1px solid black;
 }
 
 #tray-subtotal {
-    
+    width: 20%;
 }
