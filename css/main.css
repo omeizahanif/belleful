@@ -187,8 +187,20 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */.signup-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        margin: 10vh auto;
+    }
+    #login-form, #signup-form {
+        margin: 5em auto;
+    }
+    
+
+    
 }
 
 @media print,
@@ -271,7 +283,7 @@ body {
     background-color: darksalmon;
     box-sizing: border-box;
     height: 100%;
-    padding: 10px;
+    padding: 0px;
     margin: 0px;
 }
 
@@ -328,7 +340,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     font-family: monospace;
-    width: 20%;
+    width: 250px;
     height: 65vh;
     padding: 0 15px 10px 15px;
     border-radius: 10px;
@@ -355,7 +367,7 @@ body {
 #login-form > input {
     margin-bottom: 40px;
     border-top: none;
-    border-left: none;
+    border-left: 2px solid red;
     border-right: none;
     font-family: inherit;
     height: 5vh;
@@ -378,6 +390,7 @@ body {
     border-width: thin;
     font-family: inherit;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 footer {
@@ -392,6 +405,3 @@ footer {
     margin: 1vh auto;
     text-align: center;
 }
-
-
-
