@@ -31,21 +31,26 @@
   </header>
   <main class="tray-container">
       <header class="tray-title">
-      <h1>tray</h1>
+      <h1>your tray</h1>
      </header>
      <section class="tray-block">
          <article id="tray">
              <ul class="tray-item">
                  <li>Fried Rice</li>
                  <li>$10</li>
-                 <li><input type="number"></li>
-                 <li>X</li>
+                 <li><input type="number" min="1" max="10" value="1"></li>
+                 <li><span>X</span></li>
              </ul>
          </article>
          <aside id="tray-subtotal">
             <h2>Subtotal</h2>
              <span>$100</span>
          </aside>
+     </section>
+     <section class="tray-actions">
+         <button id="new-order">New Order</button>
+         <button id="empty-tray" disabled>Empty Tray</button>
+         <button id="checkout-button">Checkout</button>
      </section>
   </main>
   <footer>
