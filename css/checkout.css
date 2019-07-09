@@ -1,11 +1,48 @@
 #checkoutContainer {
-    display: flex;
+/*    display: flex;*/
     width: 90%;
     margin: 0 auto;
+    border: 2px solid black;
 }
 
 #checkoutForm {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
+    background-color: white;
+    width: 60%;
+/*    min-width: 90%;*/
+    height: 70vh;
+    padding: 0.3em;
+}
+
+#checkoutForm hr {
+    width: 96.8%;
+}
+
+input {
+    margin: 0.5em auto;
+    padding: 0.5em 0;
+    font-size: 14px;
+}
+
+input[name="email"] {
+   width: 96.7%;
+}
+
+input[name="firstname"] {
+   width: 47.8%;
+}
+
+input[name="lastname"] {
+   width: 47.8%;
+}
+
+input[name="address"] {
+   width: 96.7%;
+}
+
+#checkoutButton {
+    float: right;
+    position: relative;
+    right: 20px;
+    padding: 0.4em;
+    background-color: aqua;
 }
