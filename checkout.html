@@ -19,29 +19,51 @@
 </head>
 
 <body>
+  <header>
+      <nav class="menu">
+      <ul>
+        <li class="nav-item" id="home-icon"><a href="#">belleful</a></li>
+        <li class="nav-item"><a href="#">track order</a></li>
+        <li class="nav-item"><a href="#">order history</a></li>
+        <li class="nav-item"><a href="#">tray</a></li>
+      </ul>
+    </nav>
+  </header>
   <header id="checkoutTitle">
-      <h1>Customer Delivery Information</h1>
+      <h1>Checkout</h1>
   </header>
   <main id="checkoutContainer">
       <form id="checkoutForm">
-         <h2>Customer Information</h2>
+         <h2>Email Address</h2>
           <input type="email" name="email" placeholder="Email">
           <hr>
-          <h2>Delivery Address</h2>
+          <h2>Delivery Information</h2>
           <input type="text" name="firstname" placeholder="First Name">
           <input type="text" name="lastname" placeholder="Last Name">
           <input type="text" name="address" placeholder="Address">
+          <div>
+              <input type="tel" name="number" placeholder="234-xxx-xxx-xxxx">
+          <input type="date" name="date" placeholder="01/01/1970">    
+          </div>
           <a href="tray.html">Back to Tray</a>
           <button id="checkoutButton">Complete Order</button>
       </form>
       <section id="checkoutSummary">
           <h2>Summary</h2>
-          <p>Subtotal</p>
-          <span>$100</span>
-          <p>Shipping</p>
-          <span>$10</span>
-          <p>Total</p>
-          <span>$110</span>
+          <ul class="summary-list">
+              <li class="summary-item">
+                  <p>Subtotal</p>
+                  <span>$100</span>           
+              </li>
+              <li class="summary-item">
+                  <p>Shipping</p>
+                  <span>$10</span>        
+              </li>
+              <li class="summary-item">
+                   <p>Total</p>
+                   <span>$110</span>   
+              </li>
+          </ul>
       </section>
   </main>
   <footer>
