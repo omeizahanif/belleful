@@ -1,15 +1,27 @@
 #checkoutContainer {
-/*    display: flex;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
     width: 90%;
     margin: 0 auto;
     border: 2px solid black;
 }
 
+#checkoutTitle {
+    font-family: monospace;
+    width: 90%;
+    margin: 2% auto;
+    background-color: white;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: .1em;
+}
+
 #checkoutForm {
     background-color: white;
-    width: 60%;
+    width: 100%;
 /*    min-width: 90%;*/
-    height: 70vh;
+/*    height: 70vh;*/
     padding: 0.3em;
 }
 
@@ -23,20 +35,18 @@ input {
     font-size: 14px;
 }
 
-input[name="email"] {
+input[name="email"],
+input[name="address"] {
    width: 96.7%;
 }
 
-input[name="firstname"] {
-   width: 47.8%;
-}
-
+input[name="firstname"],
 input[name="lastname"] {
    width: 47.8%;
 }
 
-input[name="address"] {
-   width: 96.7%;
+#checkoutForm div {
+    margin-bottom: 2em;
 }
 
 #checkoutButton {
@@ -45,4 +55,38 @@ input[name="address"] {
     right: 20px;
     padding: 0.4em;
     background-color: aqua;
+}
+
+#checkoutSummary {
+    font-family: monospace;
+    width: 50%;
+    background-color: white; 
+    padding: 0;
+}
+
+.summary-list {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.summary-list :nth-child(3) {
+    border-top: 1px solid dimgray;
+    margin-top: 10em;
+    font-weight: 700;
+}
+
+.summary-list :nth-child(3) span {
+    font-size: 24px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-item span {
+    font-weight: 700;
+    align-self: center;
+    margin-right: .5rem;
 }
