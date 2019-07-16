@@ -402,6 +402,8 @@ footer {
     border-bottom: 2px solid gray;
     height: 10vh;
     width: 90%;
-    margin: 1vh auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20em;
     text-align: center;
 }
