@@ -1,0 +1,53 @@
+#orderList {
+    width: 90%;
+    margin: auto;
+}
+
+.list-block {
+    background-color: white;
+    display: flex;
+    font-family: monospace, sans-serif;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+     padding: 0.5em;
+    text-align: center;
+}
+
+
+.list-item:first-child,
+.table-head > li:first-child {
+    width: 50%;
+    border-right: 1px solid dimgray;
+}
+
+
+.list-item:nth-child(2),
+.table-head > li:nth-child(2) {
+    width: 35%;
+    border-right: 1px solid dimgray;
+}
+
+.list-item:last-child,
+.table-head > li:last-child {
+    width: 15%;
+}
+
+.order-info span {
+    border-right: 1px solid dimgray;
+    text-align: left;
+    padding-right: 0.5em;
+}
+
+
+@media only screen and (max-width: 35em) {
+        .order-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .order-info span {
+            border: none;
+        }
+    
+}
