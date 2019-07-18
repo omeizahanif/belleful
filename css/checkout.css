@@ -11,11 +11,12 @@ main {
     margin: 0 auto;
 }
 
-#checkoutTitle {
+.working-title {
     font-family: monospace;
     width: 90%;
     margin: 2% auto;
     background-color: white;
+    color: darksalmon;
     border-bottom: 1px solid black;
     text-align: center;
     padding: .1em;
