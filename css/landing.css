@@ -96,9 +96,16 @@ figure {
 }
 
 .food-price {
-    font-size: 24px;
+    font-size: 12px;
     border: 1px solid rgb(10, 150, 100);
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-price > span {
+  font-size: 24px;
+    margin-right: 10px;
 }
 
 .add-tray {
