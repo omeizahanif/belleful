@@ -1,5 +1,6 @@
 
 let appState = {};
+let item = [];
       /*
         food
         - name
@@ -7,24 +8,22 @@ let appState = {};
         - quantity
       */
       
-      let addFoodBtn = document.querySelectorAll('.add-tray');
+let addFoodBtn = document.querySelectorAll('.add-tray');
       
-      const addToTray = (e) => {
-          let a;
-          let item = [];
+const addToTray = (e) => {
           let parent = e.target.parentElement;
-          for (let i = 0; i < parent.length; i++) {
-              
-          }
-          a += '{
-              'food' : parent.children[1].textContent,
-              'price' : parent.children[2].firstChild.textContent,
-              'quantity' : parent.children[2].lastChild.value
-          }';
-          item.push(a);
-          console.log(item);
-      };
+          item.push(order);
+          return item;
+};
+
+const displayTray = () => {};
+const alertUser = ({object}) => {};
+const fetchOrder = () => {};
+
+
       
-      addFoodBtn.forEach(function(button) {
-          button.addEventListener('click', addToTray);
-      });
+
+      
+addFoodBtn.forEach(function(button) {
+    button.addEventListener('click', addToTray);
+});
