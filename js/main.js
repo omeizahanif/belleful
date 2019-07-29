@@ -15,6 +15,19 @@ let item = [{
     quantity: 1
 }];
 
+//Tray constructor function
+let Tray = (function () {
+    this.item = new Array();
+    });
+
+    let FoodItem = (function (food, price, quantity) {
+    this.food = food;
+    this.price = price;
+    this.quantity = quantity;
+    });
+
+let currentTray = null;
+
 const addToTray = (e) => {
     let parent = e.target.parentElement;
     let order = {
@@ -26,32 +39,24 @@ const addToTray = (e) => {
     return item;
 };
 
-const createTrayData = () => {  
-    let ul = document.createElement('ul');
-    ul.classList.add('tray-item');
-    let li = document.createElement('li');
-    for (let i = 0; i < 4; i++) {
-        ul.append(li);
+const getTrayData = () => {  
+    //create tray and food item constructor functions
+    currentTray = JSON.parse(localStorage.getItem('tray'));
+    if (!currentTray) {
+        createNewTray();
     }
-    return ul;
 }
 
-const displayTray = (array) => {
-    let ulElement;
-    let ulDisplay;
-    let data = [...array];
-    let tray = document.querySelector('#tray');
-    for (let i of data) {
-        ulElement = createTrayData();
-        
-        //tray.append(ulElement);
-    }
-    return true;
-           
-};
+
 const alertUser = () => {};
 const fetchOrder = () => {};
 
+const createNewTray() {
+    localStorage.clear();
+    localStorage.setItem('tray', JSON.stringify(new Tray()));
+    currentTray = JSON.parse(localStorage.getItem('tray'));
+    
+}
 
 let addFoodBtn = document.querySelectorAll('.add-tray');
 addFoodBtn.forEach(function(button) {
