@@ -41,9 +41,10 @@ const displayTray = (array) => {
     let ulDisplay;
     let data = [...array];
     let tray = document.querySelector('#tray');
-    for (let i = 0; i < data.length; i++) {
+    for (let i of data) {
         ulElement = createTrayData();
-        tray.append(ulElement);
+        
+        //tray.append(ulElement);
     }
     return true;
            
@@ -52,7 +53,8 @@ const alertUser = () => {};
 const fetchOrder = () => {};
 
 
-let addFoodBtn = document.querySelectorAll('.add-tray');   addFoodBtn.forEach(function(button) {
+let addFoodBtn = document.querySelectorAll('.add-tray');
+addFoodBtn.forEach(function(button) {
     button.addEventListener('click', addToTray);
 });
 
