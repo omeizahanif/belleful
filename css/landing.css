@@ -112,3 +112,19 @@ figure {
     font-size: 14px;
     text-transform: uppercase
 }
+
+#tray {
+    background-color: white;
+/*    min-width: 50%;*/
+    width: 70%;
+    font-family: Courier, sans-serif;
+}
+
+#tray ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 1em;
+    border: 1px solid green;
+    height: 100px;
+}
